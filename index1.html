@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="container1">
+            <img src="weebpage.jpg" alt="#">
+        </div>
+
+        <div class="container2">
+            <h2>Sign up to Dribbble</h2>
+
+            <div class="form-group">
+                <div class="flex-container">
+                    <div>
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required class="input">
+                        <div id="nameError" style="color: red; display: none;">Enter name </div>
+                    </div>
+                    <div>
+                        <label for="username">Username:</label>
+                        <input type="text" id="username" name="username" required class="input">
+                        <div id="usernameError" style="color: red; display: none;">Enter username</div>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required placeholder="account@refero.design"
+                    class="inputbar">
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required placeholder="6+ charaters"
+                    class="inputbar">
+            </div>
+            <div class="form-group">
+                <input type="checkbox" id="agree" name="agree" required>
+                creating an account means you're okay with our Terms of services,privacy policy,and our default
+                Notification setting
+                <label for="agree"></label>
+            </div>
+            <button class="btn"onclick="validateForm()"><a href="index2.html"> create Account</a></button>
+            <h6>The site is proctected by reCAPTCHA and the google </h6>
+            <h6>privacy policy and term of services apply</h6>
+        </div>
+    </div>
+<script src="script.js"></script>
+
+
+</body>
+
+</html>
